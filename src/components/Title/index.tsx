@@ -1,5 +1,10 @@
-type Props = {
+import { Title as TitleStyles } from './styles'
+
+export type Props = {
   children: string
+  fontSize?: number
 }
 
-export const Title = (props: Props) => <span>{props.children}</span>
+export const Title = (props: Props) => (
+  <TitleStyles fontSize={props.fontSize}>{props.children}</TitleStyles>
+)
