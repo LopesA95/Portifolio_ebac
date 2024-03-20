@@ -1,7 +1,7 @@
 import { GlobalStyle } from './styles'
 import Teste from './Teste'
 
-function App() {
+export function App() {
   return (
     <>
       <GlobalStyle />
@@ -9,5 +9,3 @@ function App() {
     </>
   )
 }
-
-export default App
