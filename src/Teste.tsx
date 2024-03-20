@@ -20,7 +20,7 @@ const BotaoPerigo = styled(Botao)`
   }
 `
 
-function Teste() {
+export function Teste() {
   return (
     <>
       <Botao fontSize="18px" principal>
@@ -36,5 +36,3 @@ function Teste() {
     </>
   )
 }
-
-export default Teste
