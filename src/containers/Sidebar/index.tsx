@@ -3,7 +3,11 @@ import { Title } from '../../components/Title'
 import { Paragraph } from '../../components/Paragraph/index'
 import { ButtonStyle, Description, SidebarContainer } from './styles'
 
-export const Sidebar = () => (
+type Props = {
+  toggleTheme: () => void
+}
+
+export const Sidebar = (props: Props) => (
   <aside>
     <SidebarContainer>
       <Avatar />
@@ -16,7 +20,9 @@ export const Sidebar = () => (
         Engenheiro Front-End
       </Description>
 
-      <ButtonStyle type="button">Trocar tema</ButtonStyle>
+      <ButtonStyle onClick={props.toggleTheme} type="button">
+        Trocar tema
+      </ButtonStyle>
     </SidebarContainer>
   </aside>
 )
